@@ -1,9 +1,11 @@
 ﻿unit libtask14;
 
-function IsLeapYear : DateTime;
+function IsLeapYear : string;
 begin
-  var DateTime_var := DateTime.Now;
-  result := DateTime_var;
+    if DateTime.Now.Year mod 4 = 0 then
+       result := 'Current year is leap!'
+    else
+       result := 'Current year is NOT leap.';
 end;
 
 function LaterInYear ( first_day, second_day : integer ) : integer;
@@ -12,6 +14,14 @@ begin
     result := first_day
   else
     result := second_day;
+end;
+
+function DaysInYear : integer;
+begin
+    if DateTime.Now.Year mod 4 = 0 then
+       result := 366
+    else
+       result := 365;
 end;
 
 begin

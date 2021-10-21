@@ -33,5 +33,13 @@ begin
  result := count;
 end;
 
+function SecondsInHours( hours_number : integer ) : integer;
+begin
+  var count : integer;
+  for var i := 1 to hours_number do
+    count += 3600;
+ result := count;
+end;
+
 begin
 end.

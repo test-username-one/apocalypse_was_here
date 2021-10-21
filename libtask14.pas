@@ -6,5 +6,10 @@ begin
   result := DateTime_var;
 end;
 
+function SecondsInMinute : integer;
+begin
+  result := 60;
+end;
+
 begin
 end.

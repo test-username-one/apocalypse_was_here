@@ -24,5 +24,14 @@ begin
        result := 365;
 end;
 
+function DaysInYearRange( first_year, last_year : integer ) : integer;
+begin
+  var count : integer;
+  for var i := first_year to last_year do
+    if i mod 4 = 0 then
+      count += 1;
+ result := count;
+end;
+
 begin
 end.

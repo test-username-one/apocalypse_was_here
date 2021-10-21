@@ -6,5 +6,5 @@ begin
     else
        print('Current year is NOT leap.');
     
-    println(SecondsInMinute);
+
 end.

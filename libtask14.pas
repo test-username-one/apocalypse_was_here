@@ -1,8 +1,9 @@
 ﻿unit libtask14;
 
-function IsLeapYear : boolean;
+function IsLeapYear : DateTime;
 begin
-  result := false;
+  var DateTime_var := DateTime.Now;
+  result := DateTime_var;
 end;
 
 begin

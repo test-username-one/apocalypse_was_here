@@ -1,0 +1,3 @@
+﻿begin
+print('one');
+end.

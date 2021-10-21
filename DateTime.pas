@@ -1,11 +1,8 @@
 ﻿uses libtask14;
 
 begin
-    if IsLeapYear.Year mod 4 = 0 then
-       print('Current year is leap!')
-    else
-       print('Current year is NOT leap.');
-    
+    println(IsLeapYear);
     println(LaterInYear(12, 09));
-    
+    println(DaysInYear);
+    println(DaysInYearRange(2010, 2020));
 end.
